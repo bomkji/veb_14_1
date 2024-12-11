@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lab</h1>
+    <script>
+        // Створення масиву трикутних чисел
+        let Treag = [];
+        for (let n = 1; n <= 10; n++) {
+            Treag.push((n * (n + 1)) / 2);
+        }
+        document.write("Масив трикутних чисел: " + Treag.join("  ") + "<br>");
+
+        // Створення масиву квадратів натуральних чисел
+        let kvd = [];
+        for (let n = 1; n <= 10; n++) {
+            kvd.push(n * n);
+        }
+        document.write("Масив квадратів чисел: " + kvd.join(", ") + "<br>");
+
+        // Об'єднання масивів
+        let rez = Treag.concat(kvd);
+        document.write("Об'єднаний масив: " + rez.join(", ") + "<br>");
+
+        // Сортування масиву у зворотному порядку
+        rez.sort((a, b) => b - a);
+        document.write("Відсортований у зворотному порядку масив: " + rez.join(", "));
+    </script>
+</body>
+</html>
